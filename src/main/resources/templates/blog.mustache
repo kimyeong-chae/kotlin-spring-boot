@@ -1,0 +1,15 @@
+{{> header}}
+<h1>{{message}}</h1>
+
+<div class="articles">
+    {{#articles}}
+    <section>
+        <header class="article-header">
+            <h2 class="article-title"><a href="/article/{{seq}}">{{title}}</a></h2>
+            <div class="article-meta">By  <strong>{{author}}</strong></div>
+        </header>
+    </section>
+    {{/articles}}
+</div>
+
+{{> footer}}
